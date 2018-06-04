@@ -1,0 +1,209 @@
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    color: black;
+    background-color: black;
+    font-family: Arial, serif;
+    font-weight: bold;
+}
+
+body {
+    padding: 16px 32px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+header {
+    background-color: white;
+    border-radius: 2px;
+}
+
+main {
+    margin: 32px 0;
+}
+
+main > h1 {
+    color: white;
+    text-align: center;
+}
+
+nav {
+    text-align: right;
+    padding: 45px 0;
+}
+
+nav > a {
+    color: inherit;
+    margin: 0 25px;
+    text-decoration: none;
+}
+
+nav > a:hover {
+    border-bottom: 2px solid red;
+}
+
+footer {
+    position: absolute;
+    text-align: center;
+    font-size: small;
+    color: white;
+    width: 100%;
+    margin-bottom: 16px;
+    left: 0;
+}
+
+.menuGrid {
+    display: grid;
+    grid-gap: 16px;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: white;
+    padding: 16px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+.menuItem > img {
+    display: block;
+    width: 100%;
+    margin-bottom: 4px;
+    border-radius: 2px;
+}
+
+.menuItem > span {
+    font-size: x-large;
+}
+
+.menuItem > span:nth-child(3) {
+    font-size: medium;
+}
+
+.menuItem > input[type="checkbox"] {
+    float: right;
+}
+
+.logo {
+    color: black;
+    padding-left: 25px;
+    margin-top: -5px;
+    font-size: x-large;
+    float: left
+}
+
+.logo > span:nth-child(2) {
+    color: red;
+}
+
+.buySection {
+    background-color: white;
+    padding: 16px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    text-align: right;
+}
+
+.buySection > input {
+    font-size: large;
+    padding: 8px;
+    margin-top: 10px;
+    float: left;
+}
+
+.buySection > button {
+    color: white;
+    background-color: limegreen;
+    font-size: x-large;
+    border: 0;
+    border-radius: 2px;
+    padding: 16px 32px;
+}
+
+.buySection > span {
+    margin-right: 25px;
+}
+
+button:hover {
+    transition: background-color .075s ease-in-out;
+    background-color: green;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        padding: 16px;
+    }
+    
+    nav {
+        text-align: center;
+        padding: 16px;
+    }
+
+    nav > a {
+        margin: 0 8px;
+    }
+
+    .logo {
+        float: none;
+        padding: 0 0 8px 0;
+    }
+
+    .menuGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .buySection {
+        text-align: center;
+    }
+
+    .buySection > span {
+        margin-right: 16px;
+    }
+
+    .buySection > input {
+        display: block;
+        margin: 16px auto;
+        float: none; 
+    }
+}
+
+/* Better checkbox styling */
+.checkbox {
+    position: relative;
+    float: right;
+    margin-right: 5px;
+}
+
+.checkbox label {
+    cursor: pointer;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 0;
+    left: 0;
+    background: #eee;
+    border-radius: 2px;
+}
+
+.checkbox label:after {
+    opacity: 0.2;
+    content: '';
+    position: absolute;
+    width: 9px;
+    height: 5px;
+    background: transparent;
+    top: 6px;
+    left: 7px;
+    border: 3px solid #333;
+    border-top: none;
+    border-right: none;
+    transform: rotate(-45deg);
+}
+
+.checkbox label:hover::after {
+    opacity: 0.5;
+}
+
+.checkbox input[type=checkbox]:checked + label:after {
+    opacity: 1;
+}

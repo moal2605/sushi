@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex $U$HI</title>
+    <link rel="stylesheet" href="resources/css/contact.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        Kontakt oss
+    </header>
+    <main>
+        <div class="infoSection">
+            <div class="contactInfo">
+                    <span>Addresse</span>
+                    <p>Lysaker brygge 1</p>
+                    <p>1366, Lysaker</p>
+                </div>
+            <div class="contactInfo">
+                <span>Kontakt oss</span>
+                <p>shushini@sushimail.com</p>
+                <p>+4793838836</p>
+            </div>
+        </div>
+        <p>Bruk kontaktskjemaet nedenfor for å sende inn dine kommentarer og forslag:</p>
+        <div class="contactForm">
+            <input id="name" type="text" placeholder="Navn">
+            <input id="email" type="email" placeholder="E-post">
+            <textarea id="message" cols="30" rows="10" placeholder="Melding"></textarea>
+            <button onclick="submitAndRedirect()">Send inn</button>
+        </div>
+    </main>
+    <footer>
+        ©2018 Alex $U$HI
+    </footer>
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyB_Plrw2NEEqZnE7nN8Wcep2JIIcfOtVS4",
+            authDomain: "alex-sushi.firebaseapp.com",
+            databaseURL: "https://alex-sushi.firebaseio.com",
+            projectId: "alex-sushi",
+            storageBucket: "alex-sushi.appspot.com",
+            messagingSenderId: "637090406195"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="resources/js/contact.js"></script>
+</body>
+</html>

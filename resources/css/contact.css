@@ -1,0 +1,98 @@
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    color: black;
+    background-color: black;
+    font-family: Arial, serif;
+    font-weight: bold;
+}
+
+body {
+    padding: 16px 32px;
+    max-width: 800px;
+    margin: auto;
+}
+
+header {
+    background-color: white;
+    font-size: xx-large;
+    padding: 25px 0;
+    text-align: center;
+    border-radius: 2px;
+}
+
+main {
+    color: white;
+    margin: 32px 0;
+}
+
+footer {
+    position: absolute;
+    text-align: center;
+    font-size: small;
+    color: white;
+    width: 100%;
+    margin-bottom: 16px;
+    left: 0;
+}
+
+textarea {
+    font-family: Arial, serif;
+}
+
+input, textarea {
+    display: block;
+    padding: 8px;
+    margin: 16px 0;
+    font-size: large;
+    width: calc(100% - 20px); /* Fikser bug der breden til input elementer er 20px for stor */
+    border: 0;
+    border-radius: 2px;
+}
+
+button {
+    display: block;
+    background-color: white;
+    font-weight: bold;
+    border: 0;
+    border-radius: 2px;
+    padding: 8px 16px;
+}
+
+button:hover {
+    transition: background-color .075s ease-in-out;
+    background-color: darkgrey;
+    cursor: pointer;
+}
+
+.infoSection {
+    text-align: center;
+}
+
+.contactInfo {
+    display: inline-block;
+    text-align: right;
+    width: 200px;
+    margin: 0 16px;
+}
+
+.contactInfo:nth-child(2) {
+    text-align: left;
+}
+
+@media only screen and (max-width: 600px) {
+    .infoSection {
+        text-align: left;
+    }
+
+    .contactInfo {
+        text-align: left;
+        width: auto;
+    }
+
+    button {
+        margin: auto;
+    }
+}

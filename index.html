@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex $U$HI</title>
+    <link rel="stylesheet" href="resources/css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <span>Alex</span>
+                <span>$U$HI</span>
+            </div>         
+            <a href="contact.html">Kontakt</a>
+        </nav> 
+    </header>
+    <main>
+        <h1>Sett sammen din meny</h1>
+        <div class="menuGrid">
+            <div class="menuItem">
+                <img src="resources/img/dishes/nigiri.jpg" alt="">
+                <span>Nigiri</span>
+                <span>- 30kr</span>
+                <div class="checkbox">
+                    <input type="checkbox" value="1" id="checkbox1"/>
+                    <label for="checkbox1"></label>
+                </div>
+            </div>
+            <div class="menuItem">
+                <img src="resources/img/dishes/maki.jpg" alt="">
+                <span>Maki</span>
+                <span>- 40kr</span>
+                <div class="checkbox">
+                    <input type="checkbox" value="1" id="checkbox2"/>
+                    <label for="checkbox2"></label>
+                </div>
+            </div>
+            <div class="menuItem">
+                <img src="resources/img/dishes/sashimi.jpg" alt="">
+                <span>Sashimi</span>
+                <span>- 30kr</span>
+                <div class="checkbox">
+                    <input type="checkbox" value="1" id="checkbox3"/>
+                    <label for="checkbox3"></label>
+                </div>
+            </div>
+            <div class="menuItem">
+                <img src="resources/img/dishes/temaki.jpg" alt="">
+                <span>Temaki</span>
+                <span>- 50kr</span>
+                <div class="checkbox">
+                    <input type="checkbox" value="1" id="checkbox4"/>
+                    <label for="checkbox4"></label>
+                </div>
+            </div>
+            <div class="menuItem">
+                <img src="resources/img/dishes/umaki.jpg" alt="">
+                <span>Umaki</span>
+                <span>- 25kr</span>
+                <div class="checkbox">
+                    <input type="checkbox" value="1" id="checkbox5"/>
+                    <label for="checkbox5"></label>
+                </div>
+            </div>
+            <div class="menuItem">
+                <img src="resources/img/dishes/vaarruller.jpg" alt="">
+                <span>Vårruller</span>
+                <span>- 15kr</span>
+                <div class="checkbox">
+                    <input type="checkbox" value="1" id="checkbox6"/>
+                    <label for="checkbox6"></label>
+                </div>
+            </div>
+            <div class="menuItem">
+                <img src="resources/img/dishes/stekte-nudler.jpg" alt="">
+                <span>Stekte nudler</span>
+                <span>- 120kr</span>
+                <div class="checkbox">
+                    <input type="checkbox" value="1" id="checkbox7"/>
+                    <label for="checkbox7"></label>
+                </div>
+            </div>
+            <div class="menuItem">
+                <img src="resources/img/dishes/kylling-spyd.jpg" alt="">
+                <span>Kylling spyd</span>
+                <span>- 45kr</span>
+                <div class="checkbox">
+                    <input type="checkbox" value="1" id="checkbox8"/>
+                    <label for="checkbox8"></label>
+                </div>
+            </div>
+            <div class="menuItem">
+                <img src="resources/img/dishes/fritert-scampi.jpg" alt="">
+                <span>Fritert scampi</span>
+                <span>- 80kr</span>
+                <div class="checkbox">
+                    <input type="checkbox" value="1" id="checkbox9"/>
+                    <label for="checkbox9"></label>
+                </div>
+            </div>
+        </div>
+        <div class="buySection">
+            <input id="address" type="text" placeholder="Leveringsadresse">
+            <span id="priceTotal">Pris total: 0kr</span>
+            <button onclick="submitOrder()">Kjøp</button>
+        </div>        
+    </main>
+    <footer>
+        ©2018 Alex $U$HI
+    </footer>
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyB_Plrw2NEEqZnE7nN8Wcep2JIIcfOtVS4",
+            authDomain: "alex-sushi.firebaseapp.com",
+            databaseURL: "https://alex-sushi.firebaseio.com",
+            projectId: "alex-sushi",
+            storageBucket: "alex-sushi.appspot.com",
+            messagingSenderId: "637090406195"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="resources/js/index.js"></script>
+</body>
+</html>
